@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import morgan from "morgan";
-import helmet from "helmet";
+// import helmet from "helmet";
 import mongoSanitize from "express-mongo-sanitize";
 import cookieParser from "cookie-parser";
 import compression from "compression";
@@ -21,8 +21,8 @@ if (process.env.NODE_ENV !== "production") {
   app.use(morgan("dev"));
 }
 
-//helmet
-app.use(helmet());
+// //helmet
+// app.use(helmet());
 
 //parse json request url
 app.use(express.json());
